@@ -1,13 +1,13 @@
 import {combineReducers} from 'redux'
 
 const initialState = {
-    fishkee: []
+    fishkee: [1]
 }
 
 const fishkee = (state = initialState, {type, ...payload}) => {
     switch(type) {
         default:
-            return state
+            return state.fishkee
     }
 }
 
