@@ -1,18 +1,16 @@
 import React from 'react'
-import Card from 'material-ui/Card'
-import CardHeader from 'material-ui/Card/CardHeader'
-import CardText from 'material-ui/Card/CardText'
-import Button from 'material-ui/FloatingActionButton';
+import Card, { CardContent, CardHeader } from 'material-ui/Card';
+import Button from 'material-ui/Button';
 import AddIcon from 'material-ui-icons/Add';
 
 
 export default ({fishkee, onAddButtonClick}) => (
     <div>
         <ul>
-            {fishkee.map(item => (
-                <Card>
-                    <CardHeader>Title</CardHeader>
-                    <CardText>Lorem Ipsum</CardText>
+            {fishkee.map((item, index) => (
+                <Card key={index}>
+                    <CardHeader title="Bla Bla"/>
+                    <CardContent>Lorem Ipsum</CardContent>
                 </Card>
             ))}
         </ul>,
